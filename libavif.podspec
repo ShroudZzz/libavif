@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'libavif'
-  s.version          = '0.0.1'
+  s.version          = '0.11.1'
   s.summary          = 'libavif is a friendly, portable C implementation of the AVIF format.'
   
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
   
-  s.source           = { :git => 'https://github.com/ShroudZzz/libavif.git', :tag => 'v' + s.version.to_s }
+  s.source           = { :git => 'https://github.com/AOMediaCodec/libavif.git', :tag => 'v' + s.version.to_s }
   
   s.subspec 'core' do |ss|
     ss.source_files = 'src/*.c', 'include/avif/*.h'
