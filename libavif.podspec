@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'libdav1d' do |ss|
     ss.dependency 'libavif/core'
-    ss.dependency 'libdav1d', '>= 0.6.0'
+    ss.dependency 'libdav1d', '>= 1.2.0'
     ss.source_files = 'src/codec_dav1d.c'
     ss.pod_target_xcconfig = {
       'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/libdav1d/dav1d/include',
